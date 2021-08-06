@@ -1,4 +1,4 @@
-// Copyright 2019 Aleksander Woźniak
+// Copyright 2019 Aleksander WoÅºniak
 // SPDX-License-Identifier: Apache-2.0
 
 import 'package:flutter/widgets.dart';
@@ -64,8 +64,7 @@ class CellContent extends StatelessWidget {
           );
     } else if (isSelected) {
       cell = calendarBuilders.selectedBuilder?.call(context, day, focusedDay) ??
-          AnimatedContainer(
-            duration: duration,
+          Container(
             margin: margin,
             decoration: calendarStyle.selectedDecoration,
             alignment: Alignment.center,
